@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+
+<body>
+
+  <form id="formulario">
+    <div>
+      <input type="radio" id="sres" name="sres" value="SR." checked>
+      <label for="sres">SR.</label>
+    </div>
+
+    <div>
+      <input type="radio" id="sres" name="sres" value="SRA.">
+      <label for="sres">SRA.</label>
+    </div>
+
+
+    <label for="usuario">Nombres y Apellidos: </label>
+    <input type="text" name="usuario">
+    <br>
+    <br>
+    <label for="contrasenia">Contraseña: </label>
+    <input type="password" id="contrasenia" name="contrasenia" minlength="6" required>
+    <br>
+    <br>
+
+    <label for="correo">Correo: </label>
+    <input type="email" id="correo" pattern=".+@vallegrande\.edu\.pe" size="30" required>
+    <br>
+    <br>
+
+    <label for="fechadeNacimiento">Fecha de Nacimiento : </label>
+    <input type="date" id="fechadeNacimiento" name="trip-start" value="aaaa-mm-dd" min="1970-01-01" max="2023-06-30">
+    <br>
+    <br>
+
+    <label>
+      <input type="checkbox" id="other" name="interest" value="other" />
+      Acepto terminos y Condiciones
+    </label>
+
+    <input type="submit" id="btnCrear" name="other" value="Registro">
+
+    <br>
+    <br>
+    <br>
+  </form>
+
+  <a href="login.html">
+    <input type="submit" value="Ir a Login">
+  </a>
+
+
+
+
+
+
+
+
+  <!--========================================================== -->
+  <!-- CONTENEDOR DEL FORMULARIO -->
+  <!--========================================================== -->
+
+  <div class="container  border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
+    <div id="titulo-formulario">
+
+      <h2>Contactanos</h2>
+      <p class="fs-5">Envíanos tu mensaje</p>
+    </div>
+
+    <form id="formulario">
+
+      <div class="mb-3">
+
+        <input id="EMAIL" type="email" class="form-control" name="email" placeholder="nombre@gmail.com">
+      </div>
+
+      <div class="mb-3">
+
+        <input id="NOMBRES" type="input" class="form-control" name="name" placeholder="Nombre">
+      </div>
+
+      <div class="mb-3">
+        <input id="CELULAR" type="tel" class="form-control" name="phone" placeholder="celular">
+      </div>
+
+      <div class="mb-3">
+        <textarea id="MSG" class="form-control" name="message" placeholder="¿En qué podemos ayudarte?"
+          rows="4"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <button id="btnCrear" type="submit" class="btn btn-primary w-100 fs-5" onclick=> Enviar
+          Mensaje
+        </button>
+      </div>
+    </form>
+
+  </div>
+
+
+
+
+
+
+  <script src="../js/registro.js"></script>
+  <script src="../js/connect.js"></script>
+  <script src="validaciones.js"></script>
+
+</body>
+
+</html>
