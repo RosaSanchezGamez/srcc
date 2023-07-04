@@ -55,7 +55,7 @@ app.get('/logueo',function (req, res) {
 app.post('/api/login', function (req, res) {
   var nombres = req.body.usuario;
   var contrasenia = req.body.contrasenia;
-  var sql = 'select * from persona where correo = ? and contrasenia = ?';
+  var sql = 'select * from Persona where correo = ? and contrasenia = ?';
   conexion.query(sql, [nombres,contrasenia], function (error, results) {
     if (results.length > 0) {
       res.contentType('json').send({

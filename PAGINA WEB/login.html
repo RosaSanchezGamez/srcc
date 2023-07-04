@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <div class="container">
 
-<form id="formulario">
+        <form id="formulario" class="form">
 
-  <label for="usuario">usuario</label>
-        <input type="text" id="usuario" name="usuario" >
-    <br>
-    <br>
-        <label for="contrasenia">contraseña</label>
-        <input type="text" id="contrasenia" name="contrasenia" >
-    <br>
-    <br>
-        <input id="btnLogin" type="submit" name="submit" value="Ingresar" >
+            <div class="header">
+                Login
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="usuario">Usuario</label>
+                <input class="form-input" type="text" id="usuario" name="usuario" >
+            </div>
+            <br>
+            <br>
+                <label class="form-label" for="contrasenia">Contraseña</label>
+                <input class="form-input" type="password" id="contrasenia" name="contrasenia" >
+            <br>
+            <br>
+                <input class="form-button" id="btnLogin" type="submit" name="submit" value="Ingresar" >
 
-</form>
+        </form>
+    </div>
     <script src="login.js"></script>
     <script src="connect.js"></script>
 </body>
