@@ -1,5 +1,5 @@
 
-const url = "http://localhost:3001/api/login/";
+const url = "http://34.236.196.31:3001/api/login/";
 let resultados = '';
 const formArticulo = document.querySelector("form#formulario");
 
@@ -21,7 +21,7 @@ formArticulo.addEventListener("submit", (e) => {
     } else {
         console.log("Todos los campos están completos");
         fetch(
-            "http://localhost:3001/api/login",
+            "http://34.236.196.31:3001/api/login",
             {
                 method: 'POST',
                 headers: {

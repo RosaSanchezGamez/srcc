@@ -1,4 +1,4 @@
-const url = "http://localhost:3001/api/formulario/";
+const url = "http://34.236.196.31:3001/api/formulario/";
 let resultados = '';
 const formArticulo = document.querySelector("form#formulario");
 
